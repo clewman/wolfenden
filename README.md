@@ -5,8 +5,8 @@ pillow==5.4.1
 <br>
 env called wolfenden to reenter type-- pipenv shell
 
-project called wolfenden
-image app called images
+project called wolfenden_project
+image app called posts
 
 This is where I got help for setting up the image uploading https://wsvincent.com/django-image-uploads/
 
