@@ -12,5 +12,5 @@ This is where I got help for setting up the image uploading https://wsvincent.co
 
 used this tutorial for the parallax https://www.webnots.com/how-to-create-full-width-parallax-page-with-bootstrap-4-jumbotron/?unapproved=175935&moderation-hash=5fb245b7fc69291b20acf1eb69f7dbaf#comment-175935
 
-
+Used this tutorial for lightbox https://www.youtube.com/watch?v=k-RtYiiB47E
 
