@@ -48,6 +48,10 @@ h5 {
  color: #F60;
 }
 
+.dkorange {
+  color: #e55b00;
+}
+
 .black {
  color: #000;
 }
@@ -63,6 +67,10 @@ h5 {
 a:link, a:visited, a:active, a:hover {
   background-color: #111;
 }
+
+a:hover {
+  font-weight: 600 !important;
+}
 /*******************************************************************/
 /*padding*/
 /*******************************************************************/
@@ -71,6 +79,10 @@ a:link, a:visited, a:active, a:hover {
   padding-bottom: 10%;
 }
 
+.copy {
+  padding-top: 5%!important;
+  padding-bottom: 5% !important;
+}
 /*******************************************************************/
 /*----- NAV BAR-----*/
 /*******************************************************************/
@@ -83,19 +95,21 @@ a:link, a:visited, a:active, a:hover {
   background-color: #111;
 }
 
+
 /*******************************************************************/
 /* ------- BUTTONS --------*/
 /*******************************************************************/
 
 .btn {
-  background-color: #F60 !important;
+  background-color: #e55b00 !important;
   border: none;
   box-shadow:8px 6px 50px 1px #333;
 }
 
 .btn:hover {
   box-shadow:8px 6px 50px 4px #333;
-
+  background-color: #F60 !important;
+  font-weight: 400 !important;
 }
 
 .btn:focus {
@@ -103,7 +117,6 @@ a:link, a:visited, a:active, a:hover {
 }
 
 button.navbar-toggler:focus { outline: 1px none; }
-
 
 
 /*******************************************************************/
