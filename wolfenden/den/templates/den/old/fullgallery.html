@@ -1,0 +1,144 @@
+{% load static %}
+
+<head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <!--ajax-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js"></script>
+
+<!--lighbox-->
+  <link rel='stylesheet' href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
+
+
+
+  <!-- my styles -->
+  <link rel="stylesheet" href="{% static 'den/style.css' %}">
+
+
+  </head>
+<body>
+      <nav class="navbar navbar-expand-sm navbar-dark bg sticky-top">
+        <div class="mobileLogo d-inline-flex p-2 bd-highlight">
+            <a class="mobileLogoA" href="#">The Wolfen Den <span class="sr-only">(current)</span></a>
+            <a class="mobileLogoB" href="#"> Photography</a>
+        </div>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div id="navbarNavDropdown" class="navbar-collapse collapse">
+              <div class="navbar-nav mr-auto">
+                  <a class="nav-link logo" href="#">The Wolfen Den <span class="sr-only">(current)</span></a>
+                  <a class="navbar-brand" href="#">Photography</a>
+              </div>
+              <ul class="navbar-nav">
+                  <li class="nav-item">
+                      <a class="nav-link" >Urban</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" >Nature</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" >portrait</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" >About</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" >Contact</a>
+                  </li>
+              </ul>
+          </div>
+      </nav>
+
+
+
+
+<div class="container">
+
+
+
+<div class="container gallery-container">
+
+  <h1 class="text-center">Bootstrap 3 Gallery</h1>
+
+  <p class="page-description text-center">Grid Layout With Zoom Effect</p>
+
+  <div class="tz-gallery">
+
+      <div class="row mb-3">
+          <div class="col-md-4">
+              <div class="card">
+                  <a class="lightbox" href="{% static 'den/images/nature/nature1.jpg' %}">
+                  <img src="{% static 'den/images/nature/nature1.jpg' %}" alt="test" class="card-img-top">
+                  </a>
+              </div>
+          </div>
+
+          <div class="col-md-4">
+              <div class="card">
+                  <a class="lightbox" href="{% static 'den/images/nature/nature2.jpg' %}">
+                    <img src="{% static 'den/images/nature/nature2.jpg' %}" alt="test" class="card-img-top">
+                  </a>
+              </div>
+          </div>
+
+          <div class="col-md-4">
+              <div class="card">
+                  <a class="lightbox" href="{% static 'den/images/nature/nature3.jpg' %}">
+                    <img src="{% static 'den/images/nature/nature3.jpg' %}" alt="test" class="card-img-top">
+                  </a>
+              </div>
+          </div>
+      </div>
+        <div class="row">
+          <div class="col-md-4">
+              <div class="card">
+                  <a class="lightbox" href="{% static 'den/images/portrait/portrait1.jpg' %}">
+                    <img src="{% static 'den/images/portrait/portrait1.jpg' %}" alt="test" class="card-img-top">
+                  </a>
+              </div>
+          </div>
+
+          <div class="col-md-4">
+              <div class="card">
+                  <a class="lightbox" href="{% static 'images/den/portrait/portrait2.jpg' %}">
+                    <img src="{% static 'images/den/portrait/portrait2.jpg' %}" alt="test" class="card-img-top">
+                  </a>
+              </div>
+          </div>
+
+          <div class="col-md-4">
+              <div class="card">
+                  <a class="lightbox" href="{% static 'images/den/portrait/portrait4.JPG' %}">
+                    <img src="{% static 'images/den/portrait/portrait4.JPG' %}" alt="test" class="card-img-top">
+                  </a>
+              </div>
+          </div>
+
+      </div>
+
+  </div>
+
+</div>
+
+</div>
+
+
+
+
+<div>
+  <h1>base working</h1>
+  {% block content %}{% endblock %}
+  </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"> </script>
+
+<script>
+    baguetteBox.run('.tz-gallery');
+</script>
+</body>

@@ -1,5 +1,20 @@
 {% extends 'den/gallery.html' %}
 {% load static %}
+
 {% block content %}
-<h1>test</h1>
+<h1 class="gallery"> Urban Photography</h1>
+<div class="tz-gallery">
+
+    <div class="row mb-3">
+  {% for urban in object_list %}
+      <div class="col-md-4">
+          <div class="card">
+              <a class="lightbox" href="{{ urban.cover.url}}" alt="{{ urban.title }}">
+              <img src="{{ urban.cover.url}}" alt="{{ urban.title }}" alt="test" class="card-img-top">
+              <h2>{{ urban.title }}</h2>
+              </a>
+          </div>
+      </div>
+  {% endfor %}
+
 {% endblock %}

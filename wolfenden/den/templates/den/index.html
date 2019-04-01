@@ -9,7 +9,7 @@
 <h1 class="display-3">Here is a heading 1</h1>
 <p class="lead">Here is a short description 1</p>
 <p class="lead">
-<a class="btn btn-info btn-lg btn-md" href="#" role="button" onclick="this.blur();">Here is a button 1</a>
+<a class="btn btn-info btn-lg btn-md" href="{% url 'posts:urban' %}" role="button" onclick="this.blur();">Urban Photography</a>
 </p>
 </div>
 
@@ -30,7 +30,7 @@
 <h1 class="display-3">Here is a heading 2</h1>
 <p class="lead">Here is a short description 2</p>
 <p class="lead">
-<a class="btn btn-warning btn-lg btn-md" href="widgets.html" role="button" onclick="this.blur();">Here is a button 2</a>
+  <a class="btn btn-primary btn-lg btn-md" href="{% url 'posts:nature' %}" role="button" onclick="this.blur();">Nature Photography</a>
 </p>
 </div>
 
@@ -51,7 +51,7 @@
 <h1 class="display-3">Here is a heading 3</h1>
 <p class="lead">Here is a short description 2</p>
 <p class="lead">
-<a class="btn btn-primary btn-lg btn-md" href="themes.html" role="button" onclick="this.blur();">Here is a button 3</a>
+<a class="btn btn-primary btn-lg btn-md" href="{% url 'posts:portrait' %}" role="button" onclick="this.blur();">Portrait Photography</a>
 </p>
 </div>
 
@@ -68,7 +68,7 @@
 </div>
 
 <div class="container">
-  <h1>About</h1>
+  <h1 class="orange">About</h1>
   <div class="row">
    <div class="col">
      <p>Wolfe is a 14 year old living in sunny Portland, Oregon. He’s been a photographer for 8 years. His favorite things to do are read historical fiction, play videogames, and take pictures.</p>

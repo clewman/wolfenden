@@ -1,0 +1,21 @@
+{% extends 'den/gallery.html' %}
+{% load static %}
+
+{% block content %}
+<h1 class="gallery">Nature Photography </h1>
+<div class="tz-gallery">
+
+    <div class="row mb-3">
+
+  {% for nature in object_list %}
+      <div class="col-md-4">
+          <div class="card">
+              <a class="lightbox" href="{{ nature.cover.url}}" alt="{{ nature.title }}">
+              <img src="{{ nature.cover.url}}" alt="{{ nature.title }}" alt="test" class="card-img-top">
+              <p class='title'>{{ nature.title }}</p>
+              </a>
+          </div>
+      </div>
+  {% endfor %}
+
+{% endblock %}

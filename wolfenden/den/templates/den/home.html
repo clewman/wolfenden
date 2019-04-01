@@ -1,0 +1,17 @@
+{% extends 'den/gallery.html' %}
+{% load static %}
+
+{% block content %}
+
+  {% for urban in object_list %}
+      <div class="col-md-4">
+          <div class="card">
+              <a class="lightbox" href="{{ urban.cover.url}}" alt="{{ urban.title }}">
+              <img src="{{ urban.cover.url}}" alt="{{ urban.title }}" alt="test" class="card-img-top">
+              <h2>{{ urban.title }}</h2>
+              </a>
+          </div>
+      </div>
+  {% endfor %}
+
+{% endblock %}

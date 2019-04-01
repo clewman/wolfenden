@@ -9,7 +9,8 @@
 <!--lighbox-->
   <link rel='stylesheet' href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
 
-
+<!-- google font -->
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 
   <!-- my styles -->
   <link rel="stylesheet" href="{% static 'den/style.css' %}">
@@ -33,13 +34,13 @@
               </div>
               <ul class="navbar-nav">
                   <li class="nav-item">
-                      <a class="nav-link" >Urban</a>
+                      <a class="nav-link" href="{% url 'posts:urban' %}">Urban</a>
                   </li>
                   <li class="nav-item">
-                      <a class="nav-link" >Nature</a>
+                      <a class="nav-link" href="{% url 'posts:nature' %}">Nature</a>
                   </li>
                   <li class="nav-item">
-                      <a class="nav-link" >portrait</a>
+                      <a class="nav-link" href="{% url 'posts:portrait' %}">Portrait</a>
                   </li>
                   <li class="nav-item">
                       <a class="nav-link" >About</a>
@@ -51,86 +52,22 @@
           </div>
       </nav>
 
-
-
-
 <div class="container">
 
+  <div class="container gallery-container">
 
+    {% block content %}
 
-<div class="container gallery-container">
+    {% endblock %}
 
-  <h1 class="text-center">Bootstrap 3 Gallery</h1>
-
-  <p class="page-description text-center">Grid Layout With Zoom Effect</p>
-
-  <div class="tz-gallery">
-
-      <div class="row mb-3">
-          <div class="col-md-4">
-              <div class="card">
-                  <a class="lightbox" href="{% static 'den/images/nature/nature1.jpg' %}">
-                  <img src="{% static 'den/images/nature/nature1.jpg' %}" alt="test" class="card-img-top">
-                  </a>
-              </div>
-          </div>
-
-          <div class="col-md-4">
-              <div class="card">
-                  <a class="lightbox" href="{% static 'den/images/nature/nature2.jpg' %}">
-                    <img src="{% static 'den/images/nature/nature2.jpg' %}" alt="test" class="card-img-top">
-                  </a>
-              </div>
-          </div>
-
-          <div class="col-md-4">
-              <div class="card">
-                  <a class="lightbox" href="{% static 'den/images/nature/nature3.jpg' %}">
-                    <img src="{% static 'den/images/nature/nature3.jpg' %}" alt="test" class="card-img-top">
-                  </a>
-              </div>
-          </div>
-      </div>
-        <div class="row">
-          <div class="col-md-4">
-              <div class="card">
-                  <a class="lightbox" href="{% static 'den/images/portrait/portrait1.jpg' %}">
-                    <img src="{% static 'den/images/portrait/portrait1.jpg' %}" alt="test" class="card-img-top">
-                  </a>
-              </div>
-          </div>
-
-          <div class="col-md-4">
-              <div class="card">
-                  <a class="lightbox" href="{% static 'images/den/portrait/portrait2.jpg' %}">
-                    <img src="{% static 'images/den/portrait/portrait2.jpg' %}" alt="test" class="card-img-top">
-                  </a>
-              </div>
-          </div>
-
-          <div class="col-md-4">
-              <div class="card">
-                  <a class="lightbox" href="{% static 'images/den/portrait/portrait4.JPG' %}">
-                    <img src="{% static 'images/den/portrait/portrait4.JPG' %}" alt="test" class="card-img-top">
-                  </a>
-              </div>
-          </div>
-
-      </div>
+        </div>
+    </div>
 
   </div>
 
 </div>
 
-</div>
 
-
-
-
-<div>
-  <h1>base working</h1>
-  {% block content %}{% endblock %}
-  </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

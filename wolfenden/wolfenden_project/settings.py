@@ -37,8 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'posts.apps.PostsConfig', # Posts
-    'den',
+    'den', #den
+    'posts.apps.PostsConfig', # new
 
 ]
 
@@ -57,8 +57,8 @@ ROOT_URLCONF = 'wolfenden_project.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
-        # 'DIRS': [os.path.join(BASE_DIR, 'templates')], # may be need for posts
+        # 'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR, 'templates')], # iamge uplaoda
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
